@@ -6,6 +6,12 @@ a private package for Northwestern University.
 
 
 
+## Start Here
+
+v0.1.0 is a good place to fork/start from if building a new app.
+
+
+
 ## License
 
 &copy; Northwestern University.  All rights reserved.
