@@ -6,9 +6,11 @@ a private package for Northwestern University.
 
 
 
-## Start Here
+## Local BaseApp
 
-v0.1.0 is a good place to fork/start from if building a new app.
+composer.json and composer.lock assume BaseApp is installed in ../BaseAppLaravelPackage/.  This allows you to develop in that directory and update this app without too much hassle.
+
+Some helper scripts in this template branch would, ahem, help.
 
 
 

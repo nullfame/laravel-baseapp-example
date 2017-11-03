@@ -1,6 +1,6 @@
 <?php
 return [
-    'appName' => 'ExampleApp',
+    'appName' => 'BaseApp',
     'css' => 'app',
     'debug' => (env('BASEAPP_DEBUG') !== null ? env('BASEAPP_DEBUG') : 2),
     'fastUserSwitches' => [

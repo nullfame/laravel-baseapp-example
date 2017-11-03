@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9db1d4f2d362739a589bb1b3d262111f",
+    "content-hash": "799bdd5eb439c3c750d4fcc003e50b67",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2396,11 +2396,6 @@
         {
             "name": "weinbergit/baseapp-laravel-package",
             "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:WeinbergIT/BaseAppLaravelPackage.git",
-                "reference": "f691db70b88c612b9672d06e01d9e21d25ef0304"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/WeinbergIT/BaseAppLaravelPackage/zipball/f691db70b88c612b9672d06e01d9e21d25ef0304",
