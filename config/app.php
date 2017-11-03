@@ -177,6 +177,17 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * BaseApp Service Providers...
+         */
+        WeinbergIT\BaseApp\BaseAppServiceProvider::class,
+        WeinbergIT\BaseApp\Providers\RemoteUserAuthServiceProvider::class,
+        WeinbergIT\BaseApp\Providers\AuthServiceProvider::class,
+
+        // BaseApp Dependencies...
+        Nusait\Nuldap\NuldapServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+
     ],
 
     /*
@@ -192,6 +203,7 @@ return [
 
     'aliases' => [
 
+        // Laravel Defaults...
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -225,6 +237,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        // BaseApp Dependencies...
+        'Form'  => Collective\Html\FormFacade::class,
+        'HTML'  => Collective\Html\HtmlFacade::class,
 
     ],
 

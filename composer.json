@@ -4,11 +4,19 @@
     "keywords": ["framework", "laravel", "baseapp"],
     "license": "UNLICENSED",
     "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "no-api": true,
+            "url":  "git@github.com:WeinbergIT/BaseAppLaravelPackage.git"
+        }
+    ],
     "require": {
         "php": ">=7.0.0",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "weinbergit/baseapp-laravel-package": "dev-develop"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

@@ -51,11 +51,16 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
+        // Laravel Defaults...
         'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        // BaseApp Middleware...
+        'auth' => \WeinbergIT\BaseApp\Http\Middleware\Authenticate::class,
+        'fast_user_switch' => \WeinbergIT\BaseApp\Http\Middleware\FastUserSwitch::class,
     ];
 }
