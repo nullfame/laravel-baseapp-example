@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Auth middleware around all routes
+Route::group(['middleware' => ['auth', 'fast_user_switch']], function () {
+    Route::get('/', function () {
+        return view('home');
+    });
+    Route::get('/admin', function () {
+        return view('admin');
+    });
 });
+
+// API routes outside of WebSSO and usual middleware
+//
