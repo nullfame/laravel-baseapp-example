@@ -10,7 +10,7 @@ a private package for Northwestern University.
 
 composer.json and composer.lock assume BaseApp is installed in ../BaseAppLaravelPackage/.  This allows you to develop in that directory and update this app without too much hassle.
 
-Some helper scripts in this template branch would, ahem, help.
+`./baseapp-update.sh` will enter ../BaseAppLaravelPackage, run `gulp` to compile JavaScript and SCSS, then copy the compiled files and the Blade layout in to this directory.
 
 
 
